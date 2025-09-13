@@ -1,15 +1,17 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-export default function Hero(){
+export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div className="animated-gradient absolute inset-0 opacity-20" aria-hidden></div>
       <div className="container py-24 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <motion.div 
-            initial={{ x: -30, opacity: 0 }} 
-            animate={{ x: 0, opacity: 1 }} 
+
+          {/* Left side - Text */}
+          <motion.div
+            initial={{ x: -30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
@@ -27,22 +29,25 @@ export default function Hero(){
             </div>
           </motion.div>
 
-          <motion.div 
-            className="flex justify-center md:justify-end" 
-            initial={{ x: 30, opacity: 0 }} 
-            animate={{ x: 0, opacity: 1 }} 
+          {/* Right side - Image */}
+          <motion.div
+            className="flex justify-center md:justify-end"
+            initial={{ x: 30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
             <div className="w-full max-w-md relative">
-              <Image 
-                src="/assets/laptopmockups.png" 
-                alt="hero mockup" 
-                width={720} 
-                height={480} 
-                style={{ objectFit: 'contain' }} 
+              <Image
+                src="/assets/laptopmockups.png"
+                alt="hero mockup"
+                width={720}
+                height={480}
+                className="object-contain drop-shadow-xl"
+                priority
               />
             </div>
           </motion.div>
+
         </div>
       </div>
     </section>

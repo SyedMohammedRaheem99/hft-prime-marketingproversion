@@ -8,7 +8,12 @@ export default function Hero(){
       <div className="animated-gradient absolute inset-0 opacity-20" aria-hidden></div>
       <div className="container py-24 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <motion.div initial={ x:-30, opacity:0 } animate={ x:0, opacity:1 } transition={ duration:0.6 }>
+          <motion.div 
+  initial={{ x: -30, opacity: 0 }} 
+  animate={{ x: 0, opacity: 1 }} 
+  transition={{ duration: 0.6 }}
+>
+
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">We build product-grade apps and clean code that scales.</h1>
             <p className="mt-4 text-slate-400 max-w-xl">HFT Prime Marketing — technical marketing agency specialising in product engineering, design and audits for fast-growing teams.</p>
             <div className="mt-8 flex gap-3">

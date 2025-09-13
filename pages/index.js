@@ -1,25 +1,28 @@
+<section className="py-20">
+  <div className="container">
+    <h2 className="text-3xl font-bold text-center">Services</h2>
+    <p className="text-center text-slate-400 mt-2">
+      Full-stack engineering services for growth-focused teams.
+    </p>
 
-import Hero from '../components/Hero'
-import Services from '../components/Services'
-import FeaturedProjects from '../components/FeaturedProjects'
-import Testimonials from '../components/Testimonials'
-
-export default function Home(){
-  return (
-    <div>
-      <Hero />
-      <Services />
-      <FeaturedProjects />
-      <Testimonials />
-      <section className="py-16">
-        <div className="container text-center">
-          <h3 className="text-2xl font-semibold">Ready to build?</h3>
-          <p className="text-slate-400 mt-2">Book a free call to talk about your project.</p>
-          <div className="mt-6">
-            <a href="/contact" className="px-6 py-3 rounded-md bg-slate-900 text-white">Book a Free Call</a>
-          </div>
-        </div>
-      </section>
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
+      <div className="p-6 rounded-xl bg-white/5 hover:bg-white/10 transition transform hover:-translate-y-1 shadow-md">
+        <h3 className="font-semibold text-lg">Web Development</h3>
+        <p className="text-slate-400 text-sm mt-2">React/Next.js, scalable frontends.</p>
+      </div>
+      <div className="p-6 rounded-xl bg-white/5 hover:bg-white/10 transition transform hover:-translate-y-1 shadow-md">
+        <h3 className="font-semibold text-lg">App Development</h3>
+        <p className="text-slate-400 text-sm mt-2">Mobile-first apps with great UX.</p>
+      </div>
+      <div className="p-6 rounded-xl bg-white/5 hover:bg-white/10 transition transform hover:-translate-y-1 shadow-md">
+        <h3 className="font-semibold text-lg">Code Review</h3>
+        <p className="text-slate-400 text-sm mt-2">Audits, CI gating & performance.</p>
+      </div>
+      <div className="p-6 rounded-xl bg-white/5 hover:bg-white/10 transition transform hover:-translate-y-1 shadow-md">
+        <h3 className="font-semibold text-lg">DevOps / Maintenance</h3>
+        <p className="text-slate-400 text-sm mt-2">CI/CD, monitoring & hosting.</p>
+      </div>
     </div>
-  )
-}
+  </div>
+</section>
+

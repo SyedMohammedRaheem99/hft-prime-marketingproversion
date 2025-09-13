@@ -7,7 +7,13 @@ export default function Footer(){
       <div className="container flex flex-col md:flex-row items-start justify-between gap-6">
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 relative">
-            <Image src="/assets/logo for hftprime marketing.svg" alt="logo" fill style={objectFit:'contain'}/>
+            <Image 
+  src="/assets/logo for hftprime marketing.svg" 
+  alt="logo" 
+  fill 
+  style={{ objectFit: 'contain' }} 
+/>
+
           </div>
           <div>
             <div className="font-semibold">HFT Prime Marketing</div>
